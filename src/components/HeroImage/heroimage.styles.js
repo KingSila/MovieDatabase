@@ -53,7 +53,7 @@ export const Text = styled.div`
     }
 
     @media screen and (max-width: 720px){
-           max-width: 100%;
+        max-width: 100%;
         }
     
 
