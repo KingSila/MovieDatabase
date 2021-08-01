@@ -6,10 +6,10 @@ export const Wrapper = styled.div`
     backdrop ? `url(${IMAGE_BASE_URL}${BACKDROP_SIZE}${backdrop})` : "#000"};
   background-size: cover;
   background-position: center;
-  animation: animateMovieInfo 1s;
   padding: 40px 20px;
+  animation: animateMovieInfo 1s;
 
-  @keyframes {
+  @keyframes animateMovieInfo {
     from {
       opacity: 0;
     }
@@ -33,6 +33,11 @@ export const Content = styled.div`
 `;
 
 export const Text = styled.div`
+  width: 100%;
+  padding: 20px 40px;
+  color: var(--white);
+  overflow: hidden;
+
   .rating-directors {
     display: flex;
     justify-content: flex-start;
